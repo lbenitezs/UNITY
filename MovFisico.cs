@@ -19,6 +19,7 @@ public class MovFisico : MonoBehaviour {
 		float giro  = Input.GetAxis ("Horizontal");
 		rb.AddForce (transform.forward * aceleracion * fuerzaLineal);
 		rb.AddTorque (transform.up * giro * fuerzaGiro);
-		transform.ri
+		
 	}
 }
+
