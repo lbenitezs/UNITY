@@ -17,9 +17,10 @@ public class MovFisico : MonoBehaviour {
 	void FixedUpdate () { // se ejecuta cada 0.02s
 		float aceleracion = Input.GetAxis ("Vertical");
 		float giro  = Input.GetAxis ("Horizontal");
-		rb.AddForce (transform.forward * aceleracion * fuerzaLineal);
+		rb.AddForce (transform.right* aceleracion * fuerzaLineal);
 		rb.AddTorque (transform.up * giro * fuerzaGiro);
 		
 	}
 }
+
 
